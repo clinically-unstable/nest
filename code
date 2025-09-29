@@ -1,0 +1,55 @@
+/*Matthew Ren
+Mrs. Alblas
+9/29/25
+Software Design*/
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string user;
+    string pass;
+    float temp;
+    bool home = true;
+    bool tues = false;
+    int part;
+    int age;
+cout << "which part pal\n";
+cin >> part;
+
+// part one
+if (part == 1) {
+    if (home == true) {
+        cout << "how hot is it outside\n";
+        cin >> temp;
+        if (temp >= 75) {
+            cout << "Activating liquid nitrogen cooling system. Please do not die.";
+        } else {
+            cout << "Burning you alive, sorry.";
+        }
+    } else {
+        cout << ("Nobody's home, get out.");
+    }
+// part two
+} else if (part == 2) {
+    cout << "Enter your username.\n";
+    cin >> user;
+    cout << "enter your password now. pal.\n";
+    cin >> pass;
+    if (user == "admin" && pass == "1234") {
+        cout << "this password sucks but whatever, welcome in";
+    } else {
+        cout << "get out";
+    }
+// part three
+} else if (part == 3) {
+    cout << "Welcome to this random arcade, how old are you bud\n";
+    cin >> age;
+    if (tues == true || age <= 12) {
+        cout << "You get a free pass, good job.";
+    } else {
+        cout << "pay the fee of 8 bitcoin to get in";
+    }
+}
+}
